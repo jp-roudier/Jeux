@@ -1,4 +1,4 @@
-package Exemples;
+package Exemples_Unite;
 
 import Unite.AttaqueALarc;
 import Unite.AttaqueMainsNus;
