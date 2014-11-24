@@ -1,8 +1,8 @@
 package Exemples_Element;
 
 import Exemples_TypeCombat.AttaqueMainsNus;
+import Exemples_TypeDefense.DefendreSansDefense;
 import Unite.Courir;
-import Unite.DefendreSansDefense;
 import Unite.Element;
 import Unite.TypeCombat;
 import Unite.TypeDefense;

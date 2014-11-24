@@ -1,4 +1,6 @@
-package Unite;
+package Exemples_TypeDefense;
+
+import Unite.TypeDefense;
 
 
 public class DefendreBouclier implements TypeDefense {

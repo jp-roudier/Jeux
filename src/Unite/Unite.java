@@ -1,6 +1,7 @@
 package Unite;
 
 import Exemples_TypeCombat.AttaqueMainsNus;
+import Exemples_TypeDefense.DefendreSansDefense;
 import Plateau.Position;
 
 public abstract class Unite {

@@ -2,8 +2,8 @@ package Exemples_Element;
 
 import Exemples_TypeCombat.AttaqueALarc;
 import Exemples_TypeCombat.AttaqueMainsNus;
+import Exemples_TypeDefense.DefendreBouclier;
 import Unite.Courir;
-import Unite.DefendreBouclier;
 import Unite.Element;
 import Unite.TypeCombat;
 import Unite.TypeDefense;

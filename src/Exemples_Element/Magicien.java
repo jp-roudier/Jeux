@@ -2,7 +2,7 @@ package Exemples_Element;
 
 import Exemples_TypeCombat.AttaqueMagie;
 import Exemples_TypeCombat.AttaqueMainsNus;
-import Unite.DefendreMagie;
+import Exemples_TypeDefense.DefendreMagie;
 import Unite.Element;
 import Unite.Marcher;
 import Unite.TypeCombat;
