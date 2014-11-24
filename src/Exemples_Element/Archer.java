@@ -1,7 +1,7 @@
 package Exemples_Element;
 
-import Unite.AttaqueALarc;
-import Unite.AttaqueMainsNus;
+import Exemples_TypeCombat.AttaqueALarc;
+import Exemples_TypeCombat.AttaqueMainsNus;
 import Unite.Courir;
 import Unite.DefendreBouclier;
 import Unite.Element;

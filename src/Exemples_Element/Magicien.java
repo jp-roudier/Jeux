@@ -1,7 +1,7 @@
 package Exemples_Element;
 
-import Unite.AttaqueMagie;
-import Unite.AttaqueMainsNus;
+import Exemples_TypeCombat.AttaqueMagie;
+import Exemples_TypeCombat.AttaqueMainsNus;
 import Unite.DefendreMagie;
 import Unite.Element;
 import Unite.Marcher;

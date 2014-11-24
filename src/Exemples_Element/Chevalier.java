@@ -1,7 +1,7 @@
 package Exemples_Element;
 
-import Unite.AttaqueALepee;
-import Unite.AttaqueMainsNus;
+import Exemples_TypeCombat.AttaqueALepee;
+import Exemples_TypeCombat.AttaqueMainsNus;
 import Unite.DefendreBouclier;
 import Unite.Element;
 import Unite.Marcher;
