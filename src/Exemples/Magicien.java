@@ -1,4 +1,13 @@
-package Unite;
+package Exemples;
+
+import Unite.AttaqueMagie;
+import Unite.AttaqueMainsNus;
+import Unite.DefendreMagie;
+import Unite.Element;
+import Unite.Marcher;
+import Unite.TypeCombat;
+import Unite.TypeDefense;
+import Unite.TypeDeplacement;
 
 
 public class Magicien extends Element {

@@ -1,4 +1,13 @@
-package Unite;
+package Exemples;
+
+import Unite.AttaqueALepee;
+import Unite.AttaqueMainsNus;
+import Unite.DefendreBouclier;
+import Unite.Element;
+import Unite.Marcher;
+import Unite.TypeCombat;
+import Unite.TypeDefense;
+import Unite.TypeDeplacement;
 
 
 public class Chevalier extends Element {

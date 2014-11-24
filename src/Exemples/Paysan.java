@@ -1,4 +1,12 @@
-package Unite;
+package Exemples;
+
+import Unite.AttaqueMainsNus;
+import Unite.Courir;
+import Unite.DefendreSansDefense;
+import Unite.Element;
+import Unite.TypeCombat;
+import Unite.TypeDefense;
+import Unite.TypeDeplacement;
 
 
 public class Paysan extends Element {

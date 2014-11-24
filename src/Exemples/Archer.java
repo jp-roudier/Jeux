@@ -1,4 +1,13 @@
-package Unite;
+package Exemples;
+
+import Unite.AttaqueALarc;
+import Unite.AttaqueMainsNus;
+import Unite.Courir;
+import Unite.DefendreBouclier;
+import Unite.Element;
+import Unite.TypeCombat;
+import Unite.TypeDefense;
+import Unite.TypeDeplacement;
 
 
 public class Archer extends Element {
