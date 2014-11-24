@@ -1,4 +1,6 @@
-package Unite;
+package Exemples_TypeCombat;
+
+import Unite.TypeCombat;
 
 
 public class AttaqueALepee implements TypeCombat {
