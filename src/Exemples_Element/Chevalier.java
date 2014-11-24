@@ -1,4 +1,4 @@
-package Exemples_Unite;
+package Exemples_Element;
 
 import Unite.AttaqueALepee;
 import Unite.AttaqueMainsNus;
