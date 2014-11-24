@@ -2,20 +2,18 @@ package Unite;
 import java.util.ArrayList;
 
 public class Troupe extends Unite {
-	
-	public Unite unite;
 
 	private ArrayList<Unite> listedUnite = new ArrayList<Unite>();
 	
-    public void Add() {
+    public void addChild(Unite unite) {
     	listedUnite.add(unite);
     }
 
-    public void Suppr() {
+    public void removeChild(Unite unite) {
     	listedUnite.remove(unite);
     }
 
-    public ArrayList<Unite> getUnite() {
-    	return listedUnite;
+    public Unite getChild(int index) {
+    	return listedUnite.get(index);
     }
 }
