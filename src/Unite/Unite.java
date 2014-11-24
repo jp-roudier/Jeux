@@ -2,6 +2,7 @@ package Unite;
 
 import Exemples_TypeCombat.AttaqueMainsNus;
 import Exemples_TypeDefense.DefendreSansDefense;
+import Exemples_TypeDeplacement.Marcher;
 import Plateau.Position;
 
 public abstract class Unite {

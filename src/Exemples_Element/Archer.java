@@ -3,7 +3,7 @@ package Exemples_Element;
 import Exemples_TypeCombat.AttaqueALarc;
 import Exemples_TypeCombat.AttaqueMainsNus;
 import Exemples_TypeDefense.DefendreBouclier;
-import Unite.Courir;
+import Exemples_TypeDeplacement.Courir;
 import Unite.Element;
 import Unite.TypeCombat;
 import Unite.TypeDefense;

@@ -1,6 +1,7 @@
-package Unite;
+package Exemples_TypeDeplacement;
 
 import Plateau.Position;
+import Unite.TypeDeplacement;
 
 
 public class Marcher implements TypeDeplacement {
