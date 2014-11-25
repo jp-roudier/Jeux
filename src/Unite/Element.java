@@ -52,25 +52,25 @@ public class Element extends Unite {
         defendre.defendre();
     }
 
-    public void PrintPosition() {
+    public void printPosition() {
         System.out.println("Je me trouve aux coordonnées (X:" 
                             + _case.getPosition().getPositionX().toString() 
                             + ",Y:" + _case.getPosition().getPositionY().toString() + ")\n");
     }
     
-    public Position GetPosition() {
+    public Position getPosition() {
     	return _case.getPosition();
     }
     
-    public void GetInformation() {
+    public void getInformation() {
     	System.out.println("Je suis un "+ this.toString() +". Mes attaques sont: " 
     						+ "Attaque Principale: " + attaquePrincipale.toString() + ", " 
     						+ "Attaque Secondaire: " + attaqueSecondaire.toString() + "\n"
-    						+ this.GetPosition()
-    						+ this.GetStatus());
+    						+ this.getPosition()
+    						+ this.getStatus());
     }
     
-    public String GetStatus() {
+    public String getStatus() {
     	return ("Ma force est de: "+ force.toString() + "\n"
 				+ "Mon endurance est de: "+ endurance.toString() + "\n"
 				+ "Ma défense est de: "+ defense.toString() + "\n"
