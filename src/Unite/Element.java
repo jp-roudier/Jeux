@@ -15,28 +15,21 @@ public class Element extends Unite {
     protected Integer experience;
 
     protected String attaqueActive;
-    
-    protected Case _case;
 
     public Element() {
     	super();
-    	this._case = Carte.getInstance().GetAvailableCase();
     }
     
     public Element(Case _case) {
-    	this._case = _case;
+    	super(_case);
     }
     
     public Element(TypeCombat _attaquePrincipale, TypeCombat _attaqueSecondaire, TypeDeplacement _deplacement, TypeDefense _defendre) {
     	super(_attaquePrincipale, _attaqueSecondaire, _deplacement, _defendre);
-
-    	this._case = Carte.getInstance().GetAvailableCase();
     }
     
     public Element(TypeCombat _attaquePrincipale, TypeCombat _attaqueSecondaire, TypeDeplacement _deplacement, TypeDefense _defendre, Case _case) {
-    	super(_attaquePrincipale, _attaqueSecondaire, _deplacement, _defendre);
-    	
-        this._case = _case;
+    	super(_attaquePrincipale, _attaqueSecondaire, _deplacement, _defendre, _case);
     }
 
     public void seDeplacer(Position _position) {
