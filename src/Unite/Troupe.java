@@ -3,12 +3,18 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import Plateau.Position;
+import Plateau.Case;
 
 public class Troupe extends Unite {
 
 	private ArrayList<Unite> listedUnite = new ArrayList<Unite>();
 	
 	public Troupe() {
+		super();
+	}
+	
+	public Troupe(Case _case) {
+		super(_case);
 	}
 	
     public void addChild(Unite unite) {
