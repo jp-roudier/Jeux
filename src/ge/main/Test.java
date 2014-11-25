@@ -7,6 +7,8 @@ class Test{
 	//public Carte myCart;
 	
 	public static void main(String[] args) {
+		
+		// INIT PERSO
 		Personnage[] tPers = {new Hero(), new Pnj()};
 			
 	    for(int i = 0; i < tPers.length; i++){
@@ -17,6 +19,11 @@ class Test{
 	    	//tPers[i].soigner();
 	    }
 	    
+	    // INIT DATA CARTE
+	    
+	    // INIT CARTE
 	    Carte myCart = new Carte();
+	    
+	    
 	}
 }
