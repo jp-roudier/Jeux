@@ -9,6 +9,9 @@ import ge.drawing.JCanvas;
 import ge.drawing.MoveDrawableMouseListener;
 import ge.drawing.RectangleDrawable;
 import ge.drawing.listeners.NonOverlapMoveAdapter;
+import ge.main.Hero;
+import ge.main.Personnage;
+import ge.main.Pnj;
 
 import java.util.ArrayList;
 import java.awt.BorderLayout;
@@ -24,13 +27,24 @@ import javax.swing.JPanel;
 
 public class Carte {
 	
+	//public int[][] testPlayerCase;
+	
 	public int[][] tabCases;
 	public CarteJFrame carte;
 	
+	public JCanvas jc = new JCanvas();
+	
+	CaseDrawable[] tCases = {};
+	
 	public int _caseWidth = 20;
+	public Dimension _size 	= new Dimension(_caseWidth,_caseWidth);
+	
+	//public IDrawable _player;
+	public CaseDrawable _player;
+	public CaseDrawable _pnj;	
 
-	public Carte(){
-		tabCases = new int[8][8];
+	public Carte(int _width, int _height){
+		tabCases = new int[_width][_height];
 		for (int i = 0; i < tabCases.length; i++) {
 			for (int j = 0; j < tabCases[i].length; j++) {
 				if (i >= 2 && i <=5 && j>= 3 && j <=4) {
@@ -48,26 +62,28 @@ public class Carte {
 		drawCanvas();
 	}
 	
+	public void addSprite(int _X, int _Y){
+	    //IDrawable _player 	= new CaseDrawable(Color.BLUE,new Point(_caseWidth*_X,_caseWidth*_Y),_size, "P");
+		_player 	= new CaseDrawable(Color.BLUE,new Point(_caseWidth*_X,_caseWidth*_Y),_size, "P");
+	    jc.addDrawable(_player);Point p =new Point();
+	    
+	    
+	}
+	
+	public void addSpritePnj(int _X, int _Y){
+	    _pnj 		= new CaseDrawable(Color.ORANGE,new Point(_caseWidth*_X,_caseWidth*_Y),_size, "E");
+		jc.addDrawable(_pnj);
+	}
+	
+	
+	
+	
+	
 	public void drawCanvas() {
-		JCanvas jc = new JCanvas();
+		
 		jc.setBackground(Color.WHITE);
 		jc.setPreferredSize(new Dimension(400,300));
-		//jc.setLocationRelativeTo(null);          
-		
-		JButton bouton = new JButton("Mon bouton");
-		bouton.setSize(50,20);
-		//jc.setLayout(new BorderLayout());
-	    
-		
-	    //container.add(myPlateau, BorderLayout.CENTER);
-			
-		Dimension dim  		= new Dimension(40,40);
-		Dimension _size 	= new Dimension(_caseWidth,_caseWidth);
-		/*IDrawable rect 		= new RectangleDrawable(Color.RED,new Point(200,10),dim);
-		IDrawable circle 	= new CircleDrawable(Color.BLUE,new Point(300,30),dim);*/
-		
-		
-		
+
 		int _numCase = 1;
 	    int _posX = 0;
 	    int _posY = 0;
@@ -93,19 +109,9 @@ public class Carte {
 			
 		}
 	    
-	    IDrawable _player 	= new CaseDrawable(Color.BLUE,new Point(_caseWidth*3,_caseWidth*7),_size, "P");
-	    jc.addDrawable(_player);
-	    IDrawable _pnj 		= new CaseDrawable(Color.ORANGE,new Point(_caseWidth*7,_caseWidth*5),_size, "E");
-		jc.addDrawable(_pnj);
-		
-		//jc.addDrawable(rect);
-		//jc.addDrawable(circle);
-		//jc.add(bouton, BorderLayout.NORTH);
-		
 		//new MoveDrawableMouseListener(jc);
 		new NonOverlapMoveAdapter(jc);
 		GUIHelper.showOnFrame(jc,"test JCanvas");
-		jc.add(bouton);
 		
 	}
 	

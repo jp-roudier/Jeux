@@ -24,7 +24,7 @@ public class GUIHelper {
 		
 		//        frame.setSize(dim);
 		
-				
+		frame.setLocationRelativeTo(frame.getParent());
 		frame.addWindowListener(wa);
 		frame.getContentPane().add(component);
 		frame.pack();
@@ -42,6 +42,7 @@ public class GUIHelper {
 			}
 		};
 		//        frame.setSize(dim);
+		frame.setLocationRelativeTo(frame.getParent());
 		frame.addWindowListener(wa);
 		frame.add(component);
 		frame.pack();

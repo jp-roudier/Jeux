@@ -1,5 +1,7 @@
 package ge.main;
 
+import java.awt.Point;
+
 import ge.map.Carte;
 
 class Test{
@@ -21,8 +23,16 @@ class Test{
 	    
 	    // INIT DATA CARTE
 	    
+	    // 
+	    
 	    // INIT CARTE
-	    Carte myCart = new Carte();
+	    Carte myCart = new Carte(16,12);
+	    
+	    myCart.addSprite(2,2);
+	    myCart.addSpritePnj(4,2);
+	    
+	    Point p = new Point(2*20,4*20);
+	    myCart._player.setPosition(p);
 	    
 	    
 	}

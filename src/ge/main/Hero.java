@@ -9,4 +9,6 @@ public class Hero extends Personnage {
 	public Hero(Attack esprit, Soin soin, Move dep) {
 		super(esprit, soin, dep);
 	}
+	
+	
 }

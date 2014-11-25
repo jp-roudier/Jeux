@@ -25,24 +25,21 @@ public class CaseDrawable extends FormDrawable{
 		
 	}
 
-	/* (non-Javadoc)
-	 * @see draw.Drawable#draw(java.awt.Graphics)
-	 */
 	public void draw(Graphics g) {
 		Color c = g.getColor();
-		
-		//g.setColor(color);
-		//g.fillRect(rect.x,rect.y,rect.height,rect.width);
-		//g.setColor(c);
-		
-	    
-	    g.setColor(color);
+		g.setColor(color);
 	    
 	    g.fillRect(rect.x, rect.y, rect.height, rect.width);
 	    g.setColor(Color.black);
 	    g.drawRect(rect.x, rect.y, rect.height, rect.width);
 	    g.setColor(Color.GRAY);
 	    g.drawString(_label, (rect.x)+_textDeltaX, (rect.y)+_textDeltaY);
+	}
+	
+	public void move(){
+		//Point p = this.getPosition();
+		//System.out.println("getPosition => " + p);
+		System.out.println("getPosition => ");
 	}
 
 }
