@@ -9,7 +9,7 @@ import Plateau.Position;
 
 public abstract class Unite {
 
-	protected TypeDeplacement deplacement = new Marcher();;
+	protected TypeDeplacement deplacement = new Marcher();
 	protected TypeCombat attaquePrincipale = new AttaqueMainsNus();
 	protected TypeCombat attaqueSecondaire = new AttaqueMainsNus();
     protected TypeDefense defendre = new DefendreSansDefense();
