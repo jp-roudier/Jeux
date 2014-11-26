@@ -1,9 +1,8 @@
 package Exemples_Element;
 
-import Exemples_TypeCombat.AttaqueALarc;
-import Exemples_TypeCombat.AttaqueMainsNus;
-import Exemples_TypeDefense.DefendreBouclier;
-import Exemples_TypeDeplacement.Courir;
+import Exemples_TypeCombat.*;
+import Exemples_TypeDefense.*;
+import Exemples_TypeDeplacement.*;
 import Unite.Element;
 import Unite.TypeCombat;
 import Unite.TypeDefense;
@@ -18,11 +17,11 @@ public class Archer extends Element {
         this.deplacement = new Courir();
         this.defendre = new DefendreBouclier();
         
-        this.force = 2;
         this.endurance = 7;
-        this.defense = 3;
         this.experience = 10;
         this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
     }
     
     public Archer(Plateau.Case _case) {
@@ -32,21 +31,21 @@ public class Archer extends Element {
         this.deplacement = new Courir();
         this.defendre = new DefendreBouclier();
         
-        this.force = 2;
         this.endurance = 7;
-        this.defense = 3;
         this.experience = 10;
         this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
     }
 
     public Archer(TypeCombat _attaquePrincipale, TypeCombat _attaqueSecondaire, TypeDeplacement _deplacement, TypeDefense _defendre) {
         super(_attaquePrincipale, _attaqueSecondaire, _deplacement, _defendre);
-        
-        this.force = 2;
+
         this.endurance = 7;
-        this.defense = 3;
         this.experience = 10;
         this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
     }
     
     public String toString() {

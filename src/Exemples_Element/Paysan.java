@@ -1,8 +1,9 @@
 package Exemples_Element;
 
-import Exemples_TypeCombat.AttaqueMainsNus;
-import Exemples_TypeDefense.DefendreSansDefense;
-import Exemples_TypeDeplacement.Courir;
+import Exemples_TypeCombat.*;
+import Exemples_TypeDefense.*;
+import Exemples_TypeDeplacement.*;
+import Plateau.Case;
 import Unite.Element;
 import Unite.TypeCombat;
 import Unite.TypeDefense;
@@ -18,19 +19,35 @@ public class Paysan extends Element {
         this.deplacement = new Courir();
         this.defendre = new DefendreSansDefense();
         
-        this.force = 1;
         this.endurance = 7;
-        this.defense = 3;
         this.experience = 1;
         this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
+    }
+    
+    public Paysan(Case _case) {
+    	super(_case);
+        this.attaquePrincipale = new AttaqueMainsNus();
+        this.attaqueSecondaire = new AttaqueMainsNus();
+        this.deplacement = new Courir();
+        this.defendre = new DefendreSansDefense();
+        
+        this.endurance = 7;
+        this.experience = 1;
+        this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
     }
 
     public Paysan(TypeCombat _attaquePrincipale, TypeCombat _attaqueSecondaire, TypeDeplacement _deplacement, TypeDefense _defendre) {        
-        this.force = 1;
+    	super(_attaquePrincipale, _attaqueSecondaire, _deplacement, _defendre);
+    	
         this.endurance = 7;
-        this.defense = 1;
         this.experience = 1;
         this.attaqueActive = "AttaquePrincipale";
+        this.force = this.attaquePrincipale.getForcePoint();
+        this.defense = this.defendre.getDefensePoint();
     }
     
     public String toString() {
