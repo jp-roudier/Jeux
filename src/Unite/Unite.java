@@ -16,7 +16,7 @@ public abstract class Unite {
     protected Case _case;
 
 	public Unite() {
-    	this._case = Carte.getInstance().GetAvailableCase();
+    	this._case = Carte.getInstance().getAvailableCase();
 	}
 	
 	public Unite(Case _case) {
@@ -29,7 +29,7 @@ public abstract class Unite {
 		this.deplacement = _deplacement;
 		this.defendre = _defendre;
 
-    	this._case = Carte.getInstance().GetAvailableCase();
+    	this._case = Carte.getInstance().getAvailableCase();
 	}
 	
 	public Unite(TypeCombat _attaquePrincipale, TypeCombat _attaqueSecondaire, TypeDeplacement _deplacement, TypeDefense _defendre, Case _case) {	

@@ -33,8 +33,8 @@ public class Element extends Unite {
     }
 
     public void seDeplacer(Position _position) {
-        Case destinationCase = Carte.getInstance().GetCaseFromPosition(_position);
-        if(!Carte.getInstance().GetCaseFromPosition(_position).comportement.agir()) {
+        Case destinationCase = Carte.getInstance().getCaseFromPosition(_position);
+        if(!Carte.getInstance().getCaseFromPosition(_position).comportement.agir()) {
             deplacement.deplacer(_position);
             this._case = destinationCase;
         }
