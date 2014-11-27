@@ -1,18 +1,15 @@
 package Unite;
 
-import Exemples_TypeCombat.AttaqueMainsNus;
-import Exemples_TypeDefense.DefendreSansDefense;
-import Exemples_TypeDeplacement.Marcher;
 import Plateau.Carte;
 import Plateau.Case;
 import Plateau.Position;
 
 public abstract class Unite {
 
-	protected TypeDeplacement deplacement = new Marcher();
-	protected TypeCombat attaquePrincipale = new AttaqueMainsNus();
-	protected TypeCombat attaqueSecondaire = new AttaqueMainsNus();
-    protected TypeDefense defendre = new DefendreSansDefense();
+	protected TypeDeplacement deplacement;
+	protected TypeCombat attaquePrincipale;
+	protected TypeCombat attaqueSecondaire;
+    protected TypeDefense defendre;
     protected Case _case;
 
 	public Unite() {
